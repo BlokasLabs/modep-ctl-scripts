@@ -1,0 +1,11 @@
+name: MODEP
+description: A collection of MODEP pedalboards.
+listing_script: modep_list.sh
+launcher_script: modep_launch.sh
+stopper_script: modep_stop.sh
+detail_script: modep_detail.sh
+strings:
+    singular_item: "1 pedalboard"
+    plural_items: "{#} pedalboards"
+    no_items: "No pedalboards..."
+opaque_item_mode: true
