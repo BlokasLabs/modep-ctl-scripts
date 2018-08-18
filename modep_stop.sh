@@ -7,6 +7,10 @@
 # of the BSD license.  See the LICENSE file for details.
 #
 
+. /usr/local/pisound/scripts/common/common.sh
+
 kill $(cat /tmp/.modep-bg-pid)
 rm /tmp/.modep-bg-pid
 python /usr/local/modep/modep-btn-scripts/modep-ctrl.py bypass
+
+flash_leds 5

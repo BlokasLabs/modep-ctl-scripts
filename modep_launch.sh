@@ -12,9 +12,17 @@
 echo Switching to $1...
 python /usr/local/modep/modep-btn-scripts/modep-ctrl.py index $2
 
-(while true; do sleep 100; done) &
-BG_PID=$!
+if [ $? -eq 0 ]; then
+        flash_leds 1
+        sleep 0.5
+	flash_leds 1
 
-echo $BG_PID > /tmp/.modep-bg-pid
+	(while true; do sleep 100; done) &
+	BG_PID=$!
 
-wait_process $BG_PID
+	echo $BG_PID > /tmp/.modep-bg-pid
+
+	wait_process $BG_PID
+else
+        flash_leds 50
+fi
