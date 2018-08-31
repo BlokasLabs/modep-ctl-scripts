@@ -14,4 +14,3 @@ echo entry: $DIR
 echo author: \" \"
 echo image: $DIR/screenshot.png
 echo args: $(basename "$1")
-echo midi_keyboard: Y
