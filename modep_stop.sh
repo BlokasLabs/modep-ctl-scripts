@@ -11,6 +11,6 @@
 
 kill $(cat /tmp/.modep-bg-pid)
 rm /tmp/.modep-bg-pid
-python /usr/local/modep/modep-btn-scripts/modep-ctrl.py bypass
+/usr/modep/scripts/modep-ctrl.py bypass
 
 flash_leds 5

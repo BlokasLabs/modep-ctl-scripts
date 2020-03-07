@@ -10,7 +10,7 @@
 . /usr/local/pisound/scripts/common/common.sh
 
 echo Switching to $1...
-python /usr/local/modep/modep-btn-scripts/modep-ctrl.py index $2
+/usr/modep/scripts/modep-ctrl.py index $2
 
 if [ $? -eq 0 ]; then
         flash_leds 1

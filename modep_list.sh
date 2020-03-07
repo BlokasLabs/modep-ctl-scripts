@@ -8,7 +8,7 @@
 #
 
 X=0
-for i in $(python /usr/local/modep/modep-btn-scripts/modep-ctrl.py list); do
+for i in $(/usr/modep/scripts/modep-ctrl.py list); do
 	echo $i/$X
 	X=$((X+1))
 done
