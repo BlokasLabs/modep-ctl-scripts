@@ -1,0 +1,10 @@
+Section: sound
+Priority: optional
+Homepage: https://blokas.io/
+Standards-Version: 3.9.2
+Package: modep-ctl-scripts
+Version: 1.8.0-1
+Architecture: all
+Maintainer: Blokas <hello@blokas.io>
+Depends: pisound-ctl (>= 1.03-6), modep-btn-scripts (>= 1.1.0-1)
+Description: MODEP CTL scripts
