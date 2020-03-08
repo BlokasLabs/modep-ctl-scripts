@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (C) 2017-2018 Vilniaus Blokas UAB, https://blokas.io/pisound
+# Copyright (C) 2017-2020 Vilniaus Blokas UAB, https://blokas.io/pisound
 # All rights reserved.
 #
 # This software may be modified and distributed under the terms
@@ -14,3 +14,4 @@ echo entry: $DIR
 echo author: \" \"
 echo image: $DIR/screenshot.png
 echo args: $(basename "$1")
+echo midi_keyboard: yes
